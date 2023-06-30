@@ -1,7 +1,5 @@
 export default class Currency {
-  constructor(code , name) {
-    if (typeof name !== 'string') throw new TypeError('Name must be a String');
-    if (typeof code !== 'number') throw new TypeError('Code must be a String');
+  constructor(code, name) {
     this._code = code; 
     this._name = name;
   }
@@ -31,6 +29,6 @@ export default class Currency {
   }
 
   displayFullCurrency() {
-    return `${this._name} (${this._code})}`
+    return `${this._name} (${this._code})`
   }
 }

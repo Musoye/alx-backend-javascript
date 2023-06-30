@@ -19,6 +19,7 @@
   "name": "0x00-es6_basic",
   "description": "The Repository for the backend of javaScript",
   "version": "1.0.0",
+  "type": "module",
   "main": "babel.config.js",
   "dependencies": {
     "abab": "^2.0.6",
