@@ -1,6 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 export default class Currency {
   constructor(code, name) {
-    this._code = code; 
+    this._code = code;
     this._name = name;
   }
 
@@ -22,13 +23,13 @@ export default class Currency {
 
   set code(newLength) {
     if (typeof newLength === 'string') {
-      this._code  = newLength;
+      this._code = newLength;
     } else {
       throw new TypeError('Code must be a String');
     }
   }
 
   displayFullCurrency() {
-    return `${this._name} (${this._code})`
+    return `${this._name} (${this._code})`;
   }
 }
