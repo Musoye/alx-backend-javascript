@@ -1,4 +1,4 @@
 /* eslint-disable*/
-export default function getStudentsByLocation(getListStudents, city) {
-  return getListStudents.filter((item) => item.location === city);
+export default function getStudentsByLocation(getListStudents) {
+  return getListStudents.reduce((acc, student) => { acc + student.id, 0 });
 }
