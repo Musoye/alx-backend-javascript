@@ -1,4 +1,5 @@
 /* eslint-disable*/
 export default function getStudentsByLocation(getListStudents) {
-  return getListStudents.reduce((acc, student) => { acc + student.id, 0 });
+  const arr = Array.from(getListStudents);
+  return arr.reduce((acc, student) => { acc + student.id, 0 });
 }
