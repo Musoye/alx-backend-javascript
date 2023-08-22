@@ -1,9 +1,12 @@
-const http = require('http')
+const http = require('http');
 
-const server = http.createServer((req, res) => {
-    res.end('Hello Holberton School!')
-})
+const app = http.createServer()
+
+app.on('request', (_, res) => {
+  res.end('Hello Holberton School!');
+});
 
 server.listen(1245, '127.0.0.1', () => {
-    console.log('Hello Holberton School!')
-})
+  console.log('Hello Holberton School!');
+});
+module.exports = app
